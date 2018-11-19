@@ -35,10 +35,4 @@ class CreateTodo extends Component {
   }
 };
  
-mapDispatchToProps = dispatch => {
-  return {
-    addTodo: formData => dispatch({ type: 'ADD_TODO', payload: formData })
-  }
-}
- 
-export default connect(null, mapDispatchToProps)(CreateTodo);
+export default connect()(CreateTodo);
